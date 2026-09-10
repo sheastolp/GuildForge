@@ -1,5 +1,7 @@
 # GuildScribe — Guild Hall for Twitch D&D
 
+*Part of the **GuildForge** suite — Forge your stream. Command your chat.*
+
 **GuildScribe** is a Dungeons & Dragons 5e (2014 SRD-style) **guild hall** that lives in Twitch chat.  
 Adventurers create characters, form companies, consult the archives, roll fate's dice, duel in the arena, and hunt monsters in the wilds.
 
