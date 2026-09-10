@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GuildForge — Forge your stream. Command your chat.</title>
+  <meta name="description" content="GuildForge: Chatbots, overlays & ambient tools — forged for streamers. Tools for the guild. Power for the stream." />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --surface: #1a1d24;
+      --text: #e8eaed;
+      --muted: #9aa0a6;
+      --accent: #f97316; /* ember orange */
+      --accent-dim: #c2410c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { text-align: center; padding: 4rem 0 3rem; }
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 3.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+    .taglines { margin: 1.5rem 0 2rem; }
+    .taglines p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin: 0.35rem 0;
+    }
+    .taglines .primary { color: var(--accent); font-weight: 600; font-size: 1.25rem; }
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background 0.2s;
+    }
+    .cta:hover { background: var(--accent-dim); }
+    section { margin: 3.5rem 0; }
+    h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid #2a2e37;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .card h3 { margin-bottom: 0.5rem; color: var(--accent); }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    footer {
+      text-align: center;
+      padding: 3rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid #2a2e37;
+      margin-top: 4rem;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GuildForge</h1>
+      <div class="taglines">
+        <p class="primary">Forge your stream. Command your chat.</p>
+        <p>Tools for the guild. Power for the stream.</p>
+        <p>Chatbots, overlays & ambient tools — forged for streamers.</p>
+      </div>
+      <a class="cta" href="https://github.com/sheastolp/guildforge" target="_blank" rel="noopener">View on GitHub</a>
+    </header>
+
+    <section>
+      <h2>The Tools</h2>
+      <div class="products">
+        <div class="card">
+          <h3>Guildscribe</h3>
+          <p>DnD-themed Twitch chatbot. A powerful, fantasy-flavored alternative to StreamElements.</p>
+        </div>
+        <div class="card">
+          <h3>Hunt & Hoard</h3>
+          <p>Idle, no-end RPG game running entirely through a Twitch chatbot. Viewers hunt, gather, and build their hoard.</p>
+        </div>
+        <div class="card">
+          <h3>Hushwave</h3>
+          <p>Ambient music generator for Windows. Light, atmospheric soundscapes for your stream.</p>
+        </div>
+        <div class="card">
+          <h3>Chat Overlay</h3>
+          <p>Clean, customizable OBS browser-source chat overlay. Ready to drop into your scenes.</p>
+        </div>
+        <div class="card">
+          <h3>Mic Status</h3>
+          <p>Live microphone status overlay for OBS. Let your viewers know when you’re on mic.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Get Started</h2>
+      <p style="color: var(--muted); max-width: 640px;">
+        All tools are open-source. Clone the repositories, follow the setup guides inside each package, point your bots and OBS sources, and go live.
+        Core features stay free. Future Pro / hosted options will unlock advanced features under one GuildForge account.
+      </p>
+    </section>
+
+    <footer>
+      <p><strong>GuildForge</strong></p>
+      <p>Forge your stream. Command your chat.</p>
+      <p>Tools for the guild. Power for the stream.</p>
+      <p style="margin-top: 1rem;">© 2026 GuildForge · MIT License</p>
+    </footer>
+  </div>
+</body>
+</html>
